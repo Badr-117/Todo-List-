@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:animateLayoutChanges="true"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    >
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/layoutAdd1"
+        android:layout_height="225dp"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:background="@color/colorRed"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add task"
+            android:textSize="28dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="25dp"
+            android:textColor="@color/colorWhite"/>
+        <EditText
+            android:id="@+id/etTask"
+            android:layout_width="325dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="120dp"
+            android:background="@color/colorPrimaryDark"
+            android:hint="    Your Task...."
+            android:textColor="@color/colorWhite"
+            android:textSize="20dp"/>
+
+        <ImageView
+            android:id="@+id/backBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_backbtn"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorGrey">
+
+        <ImageView
+            android:id="@+id/dateBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_datebtn"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="100dp"
+            />
+        <TextView
+            android:id="@+id/tvDate"
+            android:layout_width="115dp"
+            android:layout_height="25dp"
+            android:background="@color/colorWhite"
+            android:hint="dd : mm : yyyy"
+            android:textSize="15dp"
+            android:layout_toRightOf="@+id/dateBtn"
+            android:layout_marginTop="110dp"
+            />
+        <ImageView
+            android:id="@+id/TimeBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_timebtn"
+            android:layout_marginLeft="180dp"
+            android:layout_marginTop="100dp"
+            />
+        <TextView
+            android:id="@+id/tvTime"
+            android:layout_width="115dp"
+            android:layout_height="25dp"
+            android:background="@color/colorWhite"
+            android:hint="hh : min"
+            android:textSize="15dp"
+            android:layout_toRightOf="@+id/TimeBtn"
+            android:layout_marginTop="110dp"/>
+
+
+        <Button
+            android:id="@+id/AddBtn"
+            android:layout_width="59dp"
+            android:layout_height="59dp"
+            android:background="@drawable/round_button"
+            android:layout_marginTop="230dp"
+            android:layout_marginLeft="155dp"
+            android:text="ok"/>
+
+    </RelativeLayout>
+
+</LinearLayout>
